@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Microsoft</title>
+</head>
+
+<body>
+
+    <!-- main container that holds all the markup -->
+    <div class="container mx-auto">
+
+        <!-- navbar starts from here -->
+        <nav class="navbar flex flex-row justify-between items-center py-3">
+
+            <div class="nav-left flex items-center md:order-2 ">
+
+                <!-- toggle button -->
+                <Button class="hamburger-menu p-4 cursor-pointer md:hidden">
+                    <div class="line h-0.5 w-5 m-1 bg-black"></div>
+                    <div class="line h-0.5 w-5 m-1 bg-black"></div>
+                    <div class="line h-0.5 w-5 m-1 bg-black"></div>
+                </Button>
+
+                <!-- search button -->
+                <div class="search md:hidden">
+                    <img class="w-6 " src="img/search.png" alt="">
+                </div>
+            </div>
+
+            <div class="mainText flex md:order-1">
+
+                <div class="ml-12 md:ml-0">
+                    <img class="w-28 mx-2" src="img/logo.png" alt="">
+                </div>
+
+                <div class="md-nav hidden md:static md:bg-white md:flex md:mx-4 space-x-6">
+
+                    <div class="nav-item hover:underline hover:underline-offset-8 cursor-pointer">Microsoft 365</div>
+
+                    <div class="nav-item hover:underline hover:underline-offset-8 cursor-pointer">Office</div>
+
+                    <div class="nav-item hover:underline hover:underline-offset-8 cursor-pointer">Windows</div>
+
+                    <div class="nav-item hover:underline hover:underline-offset-8 cursor-pointer">Support</div>
+
+                </div>
+
+            </div>
+
+            <div class="nav-right flex items-center justify-between md:order-3 space-x-3">
+
+                <div class="hidden md:block m-2 hover:underline hover:underline-offset-8 cursor-pointer">All Microsoft
+                </div>
+
+                <div>
+                    <img class="search w-5 mx-3 hidden md:block m-2" src="img/search.png" alt="">
+                </div>
+
+                <div>
+                    <img class="cart w-5 mx-3" src="img/cart.png" alt="">
+                </div>
+
+                <div class="account">
+                    <img class="w-8 mr-6 md:mr-0" src="img/download.svg" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- navbar container for mobile which shows on toggeling -->
+        <div class="mobile-menu hidden md:hidden bg-gray-300 border border-black">
+            <a href="#" class="block py-3 px-4">Microsoft 365</a>
+            <a href="#" class="block py-3 px-4">Office</a>
+            <a href="#" class="block py-3 px-4">Windows</a>
+            <a href="#" class="block py-3 px-4">Support</a>
+        </div>
+
+        <!-- main content starts from here -->
+        <section class="main-bg flex flex-col-reverse md:flex-row bg-[#EBEBEB] px-24 py-10">
+
+            <div class="left flex flex-col justify-center items-center md:items-baseline ">
+
+                <h1 class="text-2xl font-medium text-center md:text-left mx-5 md:text-4xl ">Surface Laptop 4</h1>
+
+                <p class="w-3/4 mx-5 my-2 text-center md:text-left">
+                    Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved
+                    performance.
+                </p>
+
+                <button class="bg-black text-white font-bold px-4 py-2 my-6 mx-5">Shop Now ></button>
+
+            </div>
+
+            <div class="right">
+                <img src="img/9.png" alt="">
+            </div>
+
+        </section>
+
+        <!-- products section starts from here -->
+        <section class="products flex flex-col justify-center p-10 md:flex-row md:justify-center md:space-x-10">
+
+            <div class="item flex items-center md:flex-col ">
+                <img class="w-6 m-3 md:w-10" src="img/1.png" alt="">
+
+                <span class="md:text-center md:w-36">Choose your Microsot 365</span>
+
+            </div>
+
+            <div class="item flex items-center md:flex-col">
+
+                <img class="w-6 m-3 md:w-10" src="img/2.webp" alt="">
+
+                <span class="md:text-center md:w-36">Explore Surface Devices</span>
+
+            </div>
+
+            <div class="item flex items-center md:flex-col">
+
+                <img class="w-6 m-3 md:w-10" src="img/3.webp" alt="">
+
+                <span class="md:text-center md:w-36">Buy Xbox Games</span>
+
+            </div>
+
+            <div class="item flex items-center md:flex-col">
+
+                <img class="w-6 m-3 md:w-10" src="img/4.png" alt="">
+
+                <span class="md:text-center md:w-36">Get Windows 11</span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- little js for toggeling mobile navbar -->
+    <script>
+
+        btn = document.querySelector(".hamburger-menu");
+        menu = document.querySelector(".mobile-menu");
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("hidden");
+        });
+
+    </script>
+
+</body>
+
+</html>
